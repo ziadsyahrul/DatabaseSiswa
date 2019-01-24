@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:gravity="center"
+    tools:context=".UI.siswa.TambahSiswaActivity">
+
+    <EditText
+        android:id="@+id/edtNamaSiswa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Siswa"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/edtUmur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Umur siswa"
+        android:layout_marginBottom="25dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin :" />
+
+    <RadioGroup
+        android:id="@+id/radio_jenis_kelamin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp">
+
+        <RadioButton
+            android:id="@+id/radio_laki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-laki"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/radio_perempuan"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:inputType="textMultiLine"
+        android:lines="2"
+        android:maxLines="3"
+        android:id="@+id/edtAsal"
+        android:gravity="top|left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Asal siswa"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email siswa"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="25dp"/>
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Simpan"/>
+
+</LinearLayout>
